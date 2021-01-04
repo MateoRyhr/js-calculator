@@ -1,0 +1,42 @@
+html{
+    font-size: 62.5%;
+    width: 100%;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculator{
+    width: 250px;
+    padding: 25px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template: 75px repeat(5,50px) / repeat(4,1fr);
+    grid-template-areas: "display display display display";
+    background-color: #2C3A47;
+
+    border: 1px solid #757575;
+    border-radius: 10px;
+}
+
+.calculator_display{
+    grid-area: display;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.calculator_button{
+    font-size: 2rem;
+}
+#igual, #clear{
+    font-size: 2rem;
+}
+
+div div{
+    background-color: red;
+    font-size: 2rem;
+}
